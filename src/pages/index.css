@@ -1,0 +1,126 @@
+
+
+.main {
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+}
+
+.List {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(253, 219, 177);
+    margin: 0;
+    padding: 10px; 
+
+}
+.in-val{
+    width:400px;
+    height:30px;
+    margin:20px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+.List li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.List ol {
+    padding-left: 5px;
+}
+
+.List .btn {
+    justify-content: flex-end;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.ListInput {
+    background-color: gray;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 10px; 
+}
+
+.btnsgrop {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btnsgrop img {
+    width: 25px; 
+    height: 20px;
+    cursor: pointer;
+}
+
+.btnsgrop button {
+    background-color: blue;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-weight: 600;
+    border: 1px solid blue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .List,
+    .ListInput {
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+    .List li {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px; 
+    }
+
+    .btnsgrop {
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .ListInput input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .ListInput button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .List li {
+        font-size: 12px; 
+    }
+    .btnsgrop {
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 5px; 
+        width: 100%;
+    }
+
+    .btnsgrop button {
+        width: 60px; 
+        height: 25px;
+        font-size: 12px; 
+    }
+
+    .List, .ListInput {
+        width: 100%;
+        max-width: 300px; 
+}
+}
